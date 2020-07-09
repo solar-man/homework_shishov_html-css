@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Shopping Cart</title>
+    <title>Single Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/0fac504a7c.js"></script>
 </head>
+
 <body>
 
     <div class="container">
@@ -55,134 +58,115 @@
                 </nav>
             </div>
         </div>
-        <div class="cartContainer">
-            <div class="cartContainerLeft">
-                <div class="shoppingTableHead">
-                    <div>Product details</div>
-                </div>
-                <div class="cartProductDescription">
-                    <img src="img/product1.jpg" alt="">
-                    <div class="cartProductDetails">
-                        <h2 class="cartProductName">
-                            Mango People T-shirt
-                        </h2>
-                        <div class="cartProductColor">
-                            <span class="cartProductAttr">Color:</span> Red
-                        </div>
-                        <div class="cartProductSize">
-                            <span class="cartProductAttr">Size:</span> XII
-                        </div>
-                    </div>
-                </div>
-                <div class="cartProductDescription">
-                    <img src="img/product2.jpg" alt="">
-                    <div class="cartProductDetails">
-                        <h2 class="cartProductName">
-                            Mango People T-shirt
-                        </h2>
-                        <div class="cartProductColor">
-                            <span class="cartProductAttr">Color:</span> Red
-                        </div>
-                        <div class="cartProductSize">
-                            <span class="cartProductAttr">Size:</span> XII
-                        </div>
-                    </div>
-                </div>
-                <div class="cartProductDescription">
-                    <img src="img/product3.jpg" alt="">
-                    <div class="cartProductDetails">
-                        <h2 class="cartProductName">
-                            Mango People T-shirt
-                        </h2>
-                        <div class="cartProductColor">
-                            <span class="cartProductAttr">Color:</span> Red
-                        </div>
-                        <div class="cartProductSize">
-                            <span class="cartProductAttr">Size:</span> XII
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="cartContainerRight">
-                <div class="shoppingTableHead">
-                    <div class="productPrice">Unite price</div>
-                    <div class="productQty">Quantity</div>
-                    <div class="productShipping">Shipping</div>
-                    <div class="productSubtotal">Subtotal</div>
-                    <div class="productAction">Action</div>
-                </div>
 
-                <div class="cartProductParameters">
-                    <div class="productPrice">$150</div>
-                    <div class="productQty">
-                        <input type="text" value="2">
-                    </div>
-                    <div class="productShipping">FREE</div>
-                    <div class="productSubtotal">$300</div>
-                    <div class="productAction">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
+
+        <div class="productSlider">
+            <div class="leftArrow">
+                <a href="" class="leftArrowLink"><img class="" src="img/leftArrow.png" alt=""></a>
+            </div>
+            <div class="productPhoto">
+                <a href="" class="productPhotoLink"><img class="" src="img/slider1.jpg" alt=""></a>
+            </div>
+            <div class="rightArrow">
+                <a href="" class="rightArrowLink"><img class="" src="img/rightArrow.png" alt=""></a>
+            </div>
+
+        </div>
+
+
+        <div class="singleProductDesc">
+
+            <h2>WOMEN COLLECTION</h2>
+
+            <div class="miniSlider">
+                <div class="miniSlider2"> </div>
+            </div>
+
+            <div class="paragraphHeader">Moschino Cheap And Chic</div>
+
+            <div class="paragraph">Compellingly actualize fully researched processes before proactive outsourcing.
+                Progressively syndicate collaborative architectures before cutting-edge services. Completely visualize
+                parallel core competencies rather than exceptional portals.</div>
+
+            <div class="materialAndDesigner">
+                <p class="">MATERIAL: <span>COTTON</span></p>
+                <p class="">DESIGNER: <span>BINBURHAN</span></p>
+            </div>
+
+            <div class="singlePriceBlock">$561</div>
+
+            <div class="singleSelector">
+
+                <section class="chooseColorWrap">
+                    <form>
+                        <h2>CHOOSE COLOR</h2>
+                        <div class="colorValue"></div>
+                        <select name="" id="">
+                            <option>Red</option>
+                            <option>Green</option>
+                            <option>Yellow</option>
+                        </select>
+                    </form>
+                </section>
+
+                <section class="chooseSizeWrap">
+                    <form>
+                        <h2>CHOOSE SIZE</h2>
+                        <select name="" id="">
+                            <option>XXL</option>
+                            <option>XL</option>
+                            <option>L</option>
+                        </select>
+                    </form>
+                </section>
+                <section class="chooseQuantityWrap">
+                    <form>
+                        <h2>QUANTITY</h2>
+                        <input required type="number" placeholder="0">
+                    </form>
+                </section>
+            </div>
+            <button>
+                <img src="img/cartPink.png" alt="">
+                &nbsp;&nbsp;&nbsp;Add to Cart</button>
+        </div>
+        <div class="alsoLike">YOU MAY LIKE ALSO</div>
+        <div class="featured-items">
+            <div class="featured-item">
+                <div class="featured-image-wrap">
+                    <img src="img/featuredItem1.jpg" alt="">
                 </div>
-                <div class="cartProductParameters">
-                    <div class="productPrice">$150</div>
-                    <div class="productQty">
-                        <input type="text" value="2">
-                    </div>
-                    <div class="productShipping">FREE</div>
-                    <div class="productSubtotal">$300</div>
-                    <div class="productAction">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
-                </div>
-                <div class="cartProductParameters">
-                    <div class="productPrice">$150</div>
-                    <div class="productQty">
-                        <input type="text" value="2">
-                    </div>
-                    <div class="productShipping">FREE</div>
-                    <div class="productSubtotal">$300</div>
-                    <div class="productAction">
-                        <i class="fas fa-times-circle"></i>
-                    </div>
+                <div class="featured-desc">
+                    <p class="item-desc">BLAZE LEGGINGS</p>
+                    <p class="item-price">$52.00</p>
                 </div>
             </div>
-        </div>
-        <div class="shoppingBtnsWrap">
-            <button>Clear shopping cart</button>
-            <button>Continue shopping</button>
-        </div>
-        <div class="checkOutWrap">
-            <section class="shippingAddressWrap">
-                <form>
-                    <h2>Shipping adress</h2>
-                    <select required>
-                        <option>Bangladesh</option>
-                        <option>Russia</option>
-                        <option>Zimbabwe</option>
-                    </select>
-                    <input required type="text" placeholder="State">
-                    <input required type="number" placeholder="Postcode / Zip">
-                    <button>Get a quote</button>
-                </form>
-            </section>
-            <section class="couponDiscountWrap">
-                <h2>Coupon discount</h2>
-                <form>
-                    <label for="state">Enter your coupon code if you have one</label>
-                    <input id="state" type="text" placeholder="State">
-                    <button>Apply coupon</button>
-                </form>
-            </section>
-            <div class="grandTotalWrap">
-                <div class="grandTotalSub">
-                    <span>Sub total</span>
-                    <span>$900</span>
+            <div class="featured-item">
+                <div class="featured-image-wrap">
+                    <img src="img/featuredItem2.jpg" alt="">
                 </div>
-                <div class="grandTotalSum">
-                    <span>Grand total</span>
-                    <span>$900</span>
+                <div class="featured-desc">
+                    <p class="item-desc">ALEXA SWEATER</p>
+                    <p class="item-price">$52.00</p>
                 </div>
-                <button>Proceed to checkout</button>
+            </div>
+            <div class="featured-item">
+                <div class="featured-image-wrap">
+                    <img src="img/featuredItem3.jpg" alt="">
+                </div>
+                <div class="featured-desc">
+                    <p class="item-desc">AGNES TOP</p>
+                    <p class="item-price">$52.00</p>
+                </div>
+            </div>
+            <div class="featured-item">
+                <div class="featured-image-wrap">
+                    <img src="img/featuredItem4.jpg" alt="">
+                </div>
+                <div class="featured-desc">
+                    <p class="item-desc">SYLVA SWEATER</p>
+                    <p class="item-price">$52.00</p>
+                </div>
             </div>
         </div>
         <div class="reviewsWrap">
@@ -212,7 +196,6 @@
                         <input placeholder="Enter Your Email" type="email">
                         <button>Subscribe</button>
                     </form>
-
                 </div>
             </div>
         </div>
@@ -225,8 +208,10 @@
                         </div>
                     </a>
                     <div class="footerTopText1">
-                        Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate
-                        multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of
+                        Objectively transition extensive data rather than cross functional solutions. Monotonectally
+                        syndicate
+                        multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array
+                        of
                         processes and cross-unit partnerships.
                     </div>
                     <div class="footerTopText2">

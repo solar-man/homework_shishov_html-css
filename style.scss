@@ -1,10 +1,14 @@
-.offers, .featured-items {
+%flexItems {
   width: 1140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
 }
+
+$widthAll: 1600px;
+
+$widthContainer: 1140px;
 
 * {
   margin: 0;
@@ -27,20 +31,20 @@ body {
 }
 
 .container {
-  width: 1600px;
+  width: $widthAll;
   margin: 0 auto;
   min-height: calc(100vh - 384px);
 }
 
 .header {
-  width: 1140px;
+  width: $widthContainer;
   height: 100px;
   border-bottom: 1px solid #ececec;
   margin: auto;
 }
 
 .headerInside {
-  width: 1140px;
+  width: $widthContainer;
   height: inherit;
   display: flex;
   align-items: center;
@@ -52,15 +56,16 @@ body {
   line-height: 51px;
   background: url(img/logo.png) no-repeat;
   padding-left: 60px;
-}
 
-.logo p {
-  padding-left: 15px;
-}
+  p {
+    padding-left: 15px;
+  }
 
-.logo span {
-  color: #f16d7f;
-  font-weight: 400;
+  span {
+    color: #f16d7f;
+    font-weight: 400;
+  }
+
 }
 
 .logo-home {
@@ -89,21 +94,21 @@ body {
   border: 1px solid #e6e6e6;
   border-radius: 3px;
   overflow: hidden;
-}
 
-.searchWrap input {
-  height: inherit;
-  padding: 0 3px;
-  border: none;
-  outline: none;
-}
+  input {
+    height: inherit;
+    padding: 0 3px;
+    border: none;
+    outline: none;
+  }
 
-.searchWrap button {
-  height: inherit;
-  padding: 0 8px;
-  border: 0;
-  background: none;
-  border-left: 1px solid #e6e6e6;
+  button {
+    height: inherit;
+    padding: 0 8px;
+    border: 0;
+    background: none;
+    border-left: 1px solid #e6e6e6;
+  }
 }
 
 .headerCart {
@@ -117,15 +122,15 @@ body {
   background-color: #f16d7f;
   color: white;
   border: none;
-}
 
-.accountBtn a {
-  font-size: 15px;
-  line-height: 32px;
-  font-weight: 400;
-  letter-spacing: 0.025em;
-  color: #ffffff;
-  text-decoration: none;
+  a {
+    font-size: 15px;
+    line-height: 32px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    text-decoration: none;
+  }
 }
 
 .topNav {
@@ -133,21 +138,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-end;
-}
 
-.topNav a {
-  display: block;
-  border-bottom: 3px solid transparent;
-  padding-bottom: 15px;
-  text-decoration: none;
-  font-weight: 700;
-  text-transform: uppercase;
-  font-size: 14px;
-  color: #222222;
-}
+  a {
+    display: block;
+    border-bottom: 3px solid transparent;
+    padding-bottom: 15px;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222222;
+  }
 
-.topNav a:hover {
-  color: #f16d7f;
+  a:hover {
+    color: #f16d7f;
+  }
 }
 
 .topNav a:not(:last-child) {
@@ -165,7 +170,7 @@ body {
   background-size: 550px;
   display: flex;
   align-items: center;
-  width: 1140px;
+  width: $widthContainer;
   margin: auto;
 }
 
@@ -196,14 +201,15 @@ body {
   height: 839px;
   padding-top: 100px;
   flex-direction: column;
+  @extend %flexItems;
 }
 
-.offers > div:first-child {
+.offers>div:first-child {
   margin-bottom: 20px;
   margin-right: 20px;
 }
 
-.offers > div {
+.offers>div {
   position: relative;
 }
 
@@ -250,6 +256,7 @@ body {
 }
 
 .featured-items {
+  @extend %flexItems;
   padding-top: 25px;
   margin-bottom: 75px;
 }
@@ -349,7 +356,7 @@ body {
 }
 
 .discount {
-  width: 1140px;
+  width: $widthContainer;
   margin: auto;
   padding-bottom: 100px;
   display: flex;
@@ -435,7 +442,7 @@ body {
 }
 
 .reviewsWrap {
-  width: 1140px;
+  width: $widthContainer;
   height: 438px;
   position: relative;
 }
@@ -597,7 +604,7 @@ body {
 }
 
 .footerBottomWrap {
-  width: 1140px;
+  width: $widthContainer;
   margin-top: 100px;
   color: #7a7a7a;
   height: inherit;
@@ -635,7 +642,7 @@ body {
 }
 
 .footerTop {
-  width: 1140px;
+  width: $widthContainer;
   display: flex;
   margin: auto;
   margin-top: 100px;
@@ -694,7 +701,7 @@ body {
 }
 
 .newArrivals {
-  width: 1140px;
+  width: $widthContainer;
   margin: auto;
   height: inherit;
   display: flex;
@@ -725,7 +732,7 @@ body {
 .cartContainer {
   display: flex;
   padding-top: 100px;
-  width: 1140px;
+  width: $widthContainer;
   margin: auto;
 }
 
@@ -824,7 +831,7 @@ body {
 }
 
 .shoppingBtnsWrap {
-  width: 1140px;
+  width: $widthContainer;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -844,7 +851,7 @@ body {
 
 .checkOutWrap {
   margin: auto;
-  width: 1140px;
+  width: $widthContainer;
   display: flex;
   justify-content: space-between;
   margin-top: 63px;
@@ -964,11 +971,12 @@ body {
   padding-bottom: 22px;
   border-bottom: 1px solid #e2e2e2;
   margin-bottom: 17px;
-}
 
-.grandTotalSum span:last-child {
-  color: #f16d7f;
-  margin-left: 20px;
+  span:last-child {
+    color: #f16d7f;
+    margin-left: 20px;
+  }
+
 }
 
 .grandTotalWrap {
@@ -1014,7 +1022,7 @@ body {
 }
 
 .singleProductDesc {
-  width: 1140px;
+  width: $widthContainer;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1025,45 +1033,45 @@ body {
   position: relative;
   top: -85px;
   padding-top: 70px;
-}
 
-.singleProductDesc h2 {
-  font-size: 14px;
-  font-weight: 700;
-  color: #f16d7f;
-}
+  h2 {
+    font-size: 14px;
+    font-weight: 700;
+    color: #f16d7f;
+  }
 
-.singleProductDesc button {
-  width: 537px;
-  height: 55px;
-  padding: 15px;
-  background-color: #ffffff;
-  border: 1px solid #ef5b70;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 16px;
-  line-height: 1.2;
-  font-weight: 700;
-  color: #ef5b70;
-  margin-top: 27px;
-}
+  button {
+    width: 537px;
+    height: 55px;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #ef5b70;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #ef5b70;
+    margin-top: 27px;
+  }
 
-.singleProductDesc .paragraphHeader {
-  font-size: 18px;
-  font-weight: 900;
-  text-transform: uppercase;
-  color: #4d4d4d;
-}
+  .paragraphHeader {
+    font-size: 18px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #4d4d4d;
+  }
 
-.singleProductDesc .paragraph {
-  margin-top: 75px;
-  text-align: center;
-  width: 630px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #5e5e5e;
+  .paragraph {
+    margin-top: 75px;
+    text-align: center;
+    width: 630px;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    color: #5e5e5e;
+  }
 }
 
 .singleSelector {
@@ -1165,16 +1173,16 @@ body {
   display: flex;
   width: 335px;
   justify-content: space-between;
-}
 
-.materialAndDesigner p {
-  font-size: 14px;
-  font-weight: 700;
-  color: #b9b9b9;
-}
+  p {
+    font-size: 14px;
+    font-weight: 700;
+    color: #b9b9b9;
+  }
 
-.materialAndDesigner span {
-  color: #2f2f2f;
+  span {
+    color: #2f2f2f;
+  }
 }
 
 .singlePriceBlock {
